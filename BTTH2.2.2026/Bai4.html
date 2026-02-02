@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Simple Form - No Notes</title>
+    <meta charset="UTF-8" />
+    <style>
+        .outer-table {
+            border: 2px solid #333;
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .form-table td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #000000;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="outer-table">
+        <tr>
+            <td>
+                <form>
+                    <h1>Basic Info</h1>
+                    <hr>
+                    <table class="form-table">
+                        <tr>
+                            <td width="30%">Employee ID</td>
+                            <td><input type="text" value="9"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name</td>
+                            <td><input type="text" value="Dodsworth"></td>
+                        </tr>
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type="text" value="Anne"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" name="gender"> Male
+                                <input type="radio" name="gender"> Female
+                                <input type="radio" name="gender"> XXX
+                                <input type="radio" name="gender" checked> ZZZ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Title</td>
+                            <td><input type="text" value="Sales Representative"></td>
+                        </tr>
+                        <tr>
+                            <td>Suffix</td>
+                            <td><input type="text" value="Ms."></td>
+                        </tr>
+                        <tr>
+                            <td>Birthdate</td>
+                            <td><input type="text" value="12/08/1966"></td>
+                        </tr>
+                        <tr>
+                            <td>Hiredate</td>
+                            <td><input type="text" value="01/01/1994"></td>
+                        </tr>
+                        <tr>
+                            <td>report to</td>
+                            <td>
+                                <select name="report-to" id="employee">
+                                    <option value="buchanan">Buchanan</option>
+                                    <option value="fuller">Fuller</option>
+                                    <option value="leverling">Leverling</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <h1>Contact Info</h1>
+                    <hr>
+                    <table class="form-table">
+                        <tr>
+                            <td width="30%">Email</td>
+                            <td><input type="email" value="name@example.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input type="text" value="7 Houndstooth Rd."></td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text" value="London"></td>
+                        </tr>
+                        <tr>
+                            <td>Region</td>
+                            <td><input type="text" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>Postal Code</td>
+                            <td><input type="text" value="WG2 7LT"></td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>
+                                <select>
+                                    <option>Russian Federation</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>US homephone</td>
+                            <td><input type="text" value="(234)234-2342"></td>
+                        </tr>
+                        <tr>
+                            <td>Photo</td>
+                            <td><input type="text" value="EmpID9.bmp"></td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <h2>Optional Info</h2>
+                    <hr>
+
+                    <p>Notes</p>
+                    <p><input type="text_area" rows="4" cols="50"
+                            value="Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ">
+                    </p>
+
+                    <p>Preferred Shift</p>
+                    <input type="checkbox" unchecked> Regular
+                    <input type="checkbox" checked> Gravy Yard
+
+                    <br><br>
+
+                    <p>Active?</p>
+                    <input type="checkbox" checked>
+
+                    <br><br>
+
+                    <p>Are you human? <strong>TIDAWO</strong></p>
+                    <input type="text" placeholder="Input the text above here">
+
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Cancel">
+                </form>
+
+                <p><i>* required</i></p>
+            </td>
+        </tr>
+    </table>
+    <style>
+        body {
+            background-color: rgba(255, 255, 255, 0.622);
+        }
+    </style>
+</body>
+
+</html>
