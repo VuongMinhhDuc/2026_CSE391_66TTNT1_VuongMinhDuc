@@ -1,0 +1,108 @@
+/* TODO 1: Dùng universal selector để reset margin và padding về 0 cho toàn trang */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* TODO 2: Dùng type selector cho body */
+/* Yêu cầu: font-family: Arial; background-color: #f5f5f5; */
+body {
+  font-family: Arial;
+  background-color: #f5f5f5;
+}
+
+/* TODO 3: Dùng ID selector cho #main-header */
+/* Yêu cầu: background-color: #333; color: white; text-align: center; padding: 20px; */
+#main-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* TODO 4: Dùng class selector cho .nav-link */
+/* Yêu cầu: color: #333; text-decoration: none; padding: 10px 15px; */
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* TODO 5: Dùng group selector cho h1, h2, h3 */
+/* Yêu cầu: font-family: 'Georgia', serif; */
+h1,
+h2,
+h3 {
+  font-family: "Georgia", serif;
+}
+
+/* TODO 6: Dùng descendant selector cho nav a */
+/* Yêu cầu: display: inline-block; margin: 0 10px; */
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* TODO 7: Dùng pseudo-class selector cho a:hover */
+/* Yêu cầu: color: #ff6600; background-color: #eee; */
+a:hover {
+  color: #ff6600;
+  background-color: #eee;
+}
+--- Box Model & Layout Card ---
+/* Bước 1: Reset box-sizing cho toàn trang */
+* {
+  box-sizing: border-box;
+}
+
+/* Bước 2: Style cho .posts container */
+.posts {
+  /* TODO: Căn giữa, margin trên dưới, max-width */
+  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1500px;
+}
+
+/* Bước 3: Style cho .card */
+.card {
+  /* TODO: 
+       - width: 30% (hoặc calc(33.33% - 20px))
+       - display: inline-block
+       - border: 1px solid #ddd
+       - padding: 20px
+       - margin: 10px
+       - background: white
+       - border-radius: 8px
+    */
+  width: 28%;
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  border-radius: 8px;
+}
+
+/* Bước 4: Style cho .btn */
+.btn {
+  /* TODO: 
+       - display: inline-block
+       - padding: 8px 16px
+       - background: #007bff
+       - color: white
+       - text-decoration: none
+       - border-radius: 4px
+    */
+  display: inline-block;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  /* TODO: background: #0056b3 */
+  background: #0056b3;
+}
