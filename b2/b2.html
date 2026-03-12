@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng ký tài khoản</title>
+
+    <link rel="stylesheet" href="b2.css" />
+  </head>
+  <body>
+    <h2>Form đăng ký tài khoản</h2>
+
+    <form id="registerForm">
+      <div class="form-group">
+        <label>Họ và tên</label>
+        <input type="text" id="fullname" />
+        <small class="error" id="fullnameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" id="email" />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Số điện thoại</label>
+        <input type="text" id="phone" />
+        <small class="error" id="phoneError"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Mật khẩu</label>
+        <input type="password" id="password" />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Xác nhận mật khẩu</label>
+        <input type="password" id="confirmPassword" />
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Giới tính</label>
+        <input type="radio" name="gender" value="Nam" /> Nam
+        <input type="radio" name="gender" value="Nữ" /> Nữ
+        <small class="error" id="genderError"></small>
+      </div>
+
+      <div class="form-group">
+        <input type="checkbox" id="terms" />
+        Tôi đồng ý điều khoản
+        <small class="error" id="termsError"></small>
+      </div>
+
+      <button type="submit">Đăng ký</button>
+    </form>
+
+    <div id="successMessage"></div>
+
+    <script src="scp.js"></script>
+
+     <h2>Đặt hàng trực tuyến</h2>
+
+    <form id="orderForm">
+      <div class="form-group">
+        <label>Sản phẩm</label>
+        <select id="product">
+          <option value="">-- Chọn sản phẩm --</option>
+          <option value="Áo">Áo</option>
+          <option value="Quần">Quần</option>
+          <option value="Giày">Giày</option>
+        </select>
+        <small id="productError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Số lượng</label>
+        <input type="number" id="quantity" />
+        <small id="quantityError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Ngày giao hàng</label>
+        <input type="date" id="delivery" />
+        <small id="deliveryError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Địa chỉ giao</label>
+        <input type="text" id="address" />
+        <small id="addressError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Ghi chú</label>
+        <textarea id="note"></textarea>
+        <div id="noteCount">0/200</div>
+        <small id="noteError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Thanh toán</label>
+        <input type="radio" name="payment" value="COD" /> COD
+        <input type="radio" name="payment" value="Chuyển khoản" /> Chuyển khoản
+        <input type="radio" name="payment" value="Ví điện tử" /> Ví điện tử
+        <small id="paymentError" class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <strong>Tổng tiền: </strong>
+        <span id="total">0</span> VNĐ
+      </div>
+
+      <button type="submit">Đặt hàng</button>
+    </form>
+
+    <div id="confirmBox"></div>
+
+    <div id="successMessage"></div>
+
+    <script src="b2.js"></script>
+  </body>
+</html>
+  </body>
+</html>
